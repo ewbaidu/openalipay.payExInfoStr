@@ -1,4 +1,4 @@
-	海关跨境电商进口统一版信息化系统平台数据实时获取接口（php+js）
+	# 海关跨境电商进口统一版信息化系统平台数据实时获取接口（php+js）
 
 
 一、方案通知等附件
@@ -336,10 +336,10 @@ code	msg
 
 二、对接步骤
 第一步获得证书：首先准备一台前置机（需24小时开机），插入企业UKEY，进对接微信群下载debug.rar，解压后打开SignTool，打开卡验证口令读取证书（证书序列号需记下，注册和拼接原始数据需要）。
-
 复制字符串到新建的文本文档，改文档后缀为.cer。
 
 第二步按文档编写代码：
+```
 	//获取海关请求	
 $openReq=stripslashes($_POST['openReq']);
 	//json转数组
@@ -412,3 +412,4 @@ $payExInfoStr=array(
     $res = curl_exec($ch);
     curl_close($curl);
     echo  $res;
+```
