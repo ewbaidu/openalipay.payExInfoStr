@@ -294,9 +294,9 @@ serviceTime	Long	系统响应时间
 参数说明
 
 {
-??? "code":"10000",
-????"message":"",
-????"serviceTime":1533271903898
+ "code":"10000",
+"message":"",
+"serviceTime":1533271903898
 }
 
 
